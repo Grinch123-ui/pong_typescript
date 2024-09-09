@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(0, 0, 0);
+            }
+
+            div#title {
+                float: right;
+                margin-top: -20px;
+                margin-right:40px;
+                font-size: 30px;
+            }
+
+            .key {
+                width:30px;
+                text-align:center;
+                border-radius:3px;
+                background-color:lightgray;
+            }   
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body> 
+        <svg id="canvas" width="800" height="550">
+            <text id="scoreA" x="200" y="100" fill="white" font-size="60"  font-family="Impact">0</text>
+            <text id="scoreB" x="600" y="100" fill="white" font-size="60"  font-family="Impact">0</text>
+            <text id="result" x="110" y="225" fill="yellow" font-size="50"  font-family="Impact"></text>
+        </svg> 
+        <div id="title">
+        <h2>Pong Game</h2>
+        <table style="font-size: 20px;">
+            <tr><td>Possible Input Keys:</td></tr>
+            <tr><td>Move Up</td><td><div id="ArrowUp" class="key">&#x2B06</div></td><td><div id="W" class="key">&#87;</div></td></tr>
+            <tr><td>Move Down</td><td><div id="ArrowDown" class="key">&#x2B07</div></td><td><div id="s" class="key">&#83;</div></td></tr>    
+        </table>
+        <p style="margin-top: 80px; font-size: 20px;">You are the player on the LEFT!</p>
+        <p style="font-size: 20px;">You WIN when you get 7 points!</p> 
+        <p style="margin-top: 90px; font-size: 22px; font-weight:bold"> \(^_^)/ Enjoy and Have Fun! \(^_^)/</p>
+    </body>
+</html>
